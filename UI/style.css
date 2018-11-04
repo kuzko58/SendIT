@@ -1,0 +1,299 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 1vw;
+}
+body {
+	width: 99%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+	background-size: 100%;
+	perspective: 1000px;
+}
+div {
+	border: 1px transparent solid;
+}
+button:focus {
+	outline: none;
+}
+.mainHeader {
+	position: fixed;
+	width: 100%;
+	height: 7%;
+	background-image: linear-gradient(to right, rgba(0,0,0,0.10), rgba(0,0,0,0.3), rgba(0,0,0,0.10));
+	box-shadow: -1px 3px 3px rgba(0,0,0,0.5);
+}
+.mainMenu {
+	position: absolute;
+}
+#menuIconBox {
+	position: fixed;
+	left: 0.5%;
+	top: 2%;
+	width: 1.5%;
+	height: 3%;
+	box-shadow: -1px 2px 3px rgba(128,60,0,0.5);
+}
+#userIconBox {
+	position: fixed;
+	right: 3%;
+	top: 2.5%;
+	width: 2%;
+	height: 4%;
+}
+#userIdBox {
+	position: fixed;
+	right: 5%;
+	top: 2.5%;
+	width: 15%;
+	height: 2%;
+	color: rgba(128,0,0,1.00);
+	text-align: right;
+}
+.userDropList {
+	visibility: hidden;
+	position: fixed;
+	right: 0;
+	top: 6.5%;
+	width: 15%;
+	height: 50%;
+	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.5));
+	box-shadow: -1px 5px 3px rgba(0,0,0,0.5);
+	z-index: 3;
+}
+.menuDropList {
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	top: 7.4%;
+	width: 15%;
+	height: 14%;
+	color: orange;
+	font-size: 1em;
+	line-height: 2em;
+	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.3));
+	box-shadow: 2px 5px 3px rgba(0,0,0,0.5);
+	z-index: 3;
+}
+.dropList ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.dropList ul li {
+	margin: 0;
+	padding: 0.5% 2%;
+	border-bottom: 1px rgba(255,255,255,0.5) solid;
+}
+.dropList ul:last-child li:nth-child(3) {
+	border: none;
+}
+.dropList ul li:hover {
+	background-color: rgba(0,0,0,0.10);
+}
+#mainLogo {
+	position: fixed;
+	top: 0%;
+	left: 2.5%;
+	width: 8%;
+	height: 7%;
+	box-sizing: border-box;
+	background-blend-mode: color-burn;
+}
+.dropList a {
+	text-decoration: none;
+	color: orange;
+}
+.dropList a:active {
+	text-decoration: none;
+	color: orange;
+}
+input {
+	margin: 0;
+	border: none;
+}
+#userBox input {
+	position: absolute;
+	left: 4%;
+	width: 84%;
+	height: 10%;
+	;
+	padding: 2% 3%;
+	font-size: 0.9em;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 1px 1px 3px rgba(255,255,255,0.5), -1px -1px 3px rgba(255,255,255,0.5);
+}
+input::placeholder {
+ font-size: 0.75em;
+ color: rgba(200,0,0,1);
+}
+input:focus {
+	outline: none;
+}
+.dropDownInput1 {
+	top: 10%;
+}
+.dropDownInput2 {
+	top: 25%;
+}
+#userBox span {
+	position: absolute;
+	left: 5%;
+	color: rgba(0,0,128,1);
+	font-weight: bold;
+	font-size: 0.75em;
+}
+#userBox .link1 {
+	top: 60%;
+}
+#userBox .link2 {
+	bottom: 20%;
+}
+.button1 {
+	position: absolute;
+	width: 90%;
+	border: none;
+	margin: 0;
+}
+.button1:hover {
+	background-color: rgba(0,0,0,0.30);
+}
+#logInButton {
+	top: 40%;
+	left: 4%;
+	height: 10%;
+	background-image: linear-gradient(rgba(0,200,0,0.10), rgba(0,128,0,0.3));
+	color: white;
+	font-size: 0.9em;
+}
+.Box {
+	position: absolute;
+	height: 50%;
+	width: 20%;
+	box-shadow: -2px 3px 3px rgba(0,0,0,0.5), 1px -1px 3px rgba(0,0,0,0.5);
+	border-radius: 0% 0% 2% 2%;
+	z-index: 0;
+	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.2));
+}
+.Box .header {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.Box:hover .header {
+	color: white;
+}
+#Box1 {
+	top: 20%;
+	left: 19%;
+}
+#Box2 {
+	top: 20%;
+	left: 40%;
+}
+#Box2 input {
+	position: absolute;
+	top: 34.5%;
+	left: 5%;
+	height: 5%;
+	width: 90%;
+	background-color: transparent;
+	border-bottom: 1px rgba(128,128,128,0.5) solid;
+	font-size: 1em;
+	text-align: center;
+}
+ #Box2 input::placeholder {
+ font-size: 1em;
+ color: rgba(128,128,128,0.80);
+}
+.button2 {
+	top: 70%;
+	left: 5%;
+	height: 10%;
+	font-size: 1em;
+	color: black;
+	border: 1px rgba(128,128,128,0.5) solid;
+}
+.button2:hover {
+	color: white;
+}
+#Box2 button {
+	background-image: linear-gradient(rgba(128,0,0,0.20), rgba(128,0,0,0.5));
+}
+#Box3 {
+	top: 20%;
+	right: 19%;
+}
+#Box3 button {
+	background-image: linear-gradient(rgba(0,0,140,0.20), rgba(0,0,140,0.5));
+}
+.grayColor {
+	background-color: rgba(128,128,128,0.60);
+}
+#weightCat {
+	position: absolute;
+	top: 35%;
+	left: 5%;
+	width: 90%;
+	height: 5%;
+	border-bottom: 1px rgba(128,128,128,0.5) solid;
+	color: grey;
+	text-align: center;
+}
+.weightList {
+	visibility: hidden;
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	width: 90%;
+	height: 20.5%;
+	font-size: 0.9em;
+	line-height: 1.6em;
+	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.3));
+	box-shadow: 2px 5px 3px rgba(0,0,0,0.5);
+	z-index: 3;
+	text-align: center;
+}
+.listAnimeIn {
+	visibility: visible;
+	animation-name: listAnimeIn;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+ @keyframes listAnimeIn {
+ 0% {
+ opacity: 0;
+ height: 0;
+/*	transform: scaleY(0);
+		transform-origin: top;*/
+}
+ 100% {
+ opacity: 1;
+ height: 1;
+/*transform: scaleY(1);*/
+}
+}
+.listAnimeOut {
+	visibility: hidden;
+	animation-name: listAnimeOut;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+ @keyframes listAnimeOut {
+ 0% {
+ visibility: visible;
+ opacity: 1;
+ height: 1;
+/*transform: scaleY(1);
+		transform-origin: bottom;*/
+}
+ 100% {
+ opacity: 0;
+		/*transform: scaleY(0);*/
+		height: 0;
+}
+}
