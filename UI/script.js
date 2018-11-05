@@ -2,7 +2,7 @@
 const mainMenuBox = document.getElementById('mainMenuBox'),
 	userBox = document.getElementById('userBox'),
 	menuIconBox = document.getElementById('menuIconBox'),
-	userIconBox = document.getElementById('userIconBox'),
+	login = document.getElementById('login'),
 	weightCat = document.getElementById('weightCat'),
 	catList = document.getElementById('catList');
 
@@ -19,24 +19,17 @@ menuIconBox.addEventListener('click', function () {
 });
 
 
-userIconBox.addEventListener('mouseover', function () {
-	userBox.classList.remove('listAnimeOut');
-	userBox.classList.add('listAnimeIn');
+login.addEventListener('click', function () {
+	event.stopPropagation();
+	if (!userBox.classList.contains('listAnimeIn')) {
+		userBox.classList.remove('listAnimeOut');
+		userBox.classList.add('listAnimeIn');
+	} else if (userBox.classList.contains('listAnimeIn')) {
+		userBox.classList.remove('listAnimeIn');
+		userBox.classList.add('listAnimeOut');
+	}
 });
 
-userIconBox.addEventListener('mouseleave', function () {
-	userBox.classList.remove('listAnimeIn');
-	userBox.classList.add('listAnimeOut');
-});
-
-userBox.addEventListener('mouseover', function () {
-	userBox.classList.remove('listAnimeOut');
-	userBox.classList.add('listAnimeIn');
-});
-userBox.addEventListener('mouseleave', function () {
-	userBox.classList.remove('listAnimeIn');
-	userBox.classList.add('listAnimeOut');
-});
 
 
 catList.addEventListener('click', function (event) {
