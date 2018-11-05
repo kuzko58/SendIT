@@ -1,17 +1,18 @@
-html {
-	height: 100%;
+
+html, body {
 	width: 100%;
-	font-size: 1vw;
-}
-body {
-	width: 99%;
 	height: 100%;
-	background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.3));
-	background-size: 100%;
+}
+
+body {
+	background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.3));;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	perspective: 1000px;
 }
+
 div {
 	border: 1px transparent solid;
+	overflow: hidden;
 }
 button:focus {
 	outline: none;
@@ -19,61 +20,76 @@ button:focus {
 .mainHeader {
 	position: fixed;
 	width: 100%;
-	height: 7%;
-	background-image: linear-gradient(to right, rgba(0,0,0,0.10), rgba(0,0,0,0.3), rgba(0,0,0,0.10));
-	box-shadow: -1px 3px 3px rgba(0,0,0,0.5);
+	height: 60px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0.0), rgba(0,0,0,0.1), rgba(0,0,0,0.0));
+	box-shadow: -1px 1px 3px rgba(0,0,0,0.5);
+	z-index: 2;
 }
-.mainMenu {
-	position: absolute;
-}
+
 #menuIconBox {
 	position: fixed;
-	left: 0.5%;
-	top: 2%;
-	width: 1.5%;
-	height: 3%;
-	box-shadow: -1px 2px 3px rgba(128,60,0,0.5);
+	left: 15px;
+	top: 15px;
+	width: 30px;
+	height: 30px;
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.3);
 }
 #userIconBox {
 	position: fixed;
-	right: 3%;
-	top: 2.5%;
-	width: 2%;
-	height: 4%;
+	right: 15px;
+	top: 0px;
+	width: 90px;
+	height: 60px;
+	text-align: center;
+	border: yellow solid;
 }
 #userIdBox {
-	position: fixed;
-	right: 5%;
-	top: 2.5%;
-	width: 15%;
-	height: 2%;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	width: 150px;
+	height: 30px;
 	color: rgba(128,0,0,1.00);
-	text-align: right;
+}
+#userIdBox button {
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+	font-family: futura;
+	border: none;
+	font-size: 1em;
+	color: rgba(0,0,0,0.78);
+	
+}
+
+
+#userIdBox button:hover {
+	border-bottom: 2px rgba(0,0,0,0.78) solid;
 }
 .userDropList {
 	visibility: hidden;
 	position: fixed;
 	right: 0;
-	top: 6.5%;
-	width: 15%;
-	height: 50%;
+	top: 62px;
+	width: 300px;
+	height: 400px;
 	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.5));
 	box-shadow: -1px 5px 3px rgba(0,0,0,0.5);
-	z-index: 3;
+	z-index: 2;
 }
 .menuDropList {
 	visibility: hidden;
 	position: fixed;
 	left: 0;
-	top: 7.4%;
-	width: 15%;
-	height: 14%;
-	color: orange;
+	top: 62px;
+	width: 200px;
+	height: 105px;
+	color: white;
 	font-size: 1em;
 	line-height: 2em;
 	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.3));
 	box-shadow: 2px 5px 3px rgba(0,0,0,0.5);
-	z-index: 3;
+	z-index: 2;
 }
 .dropList ul {
 	list-style: none;
@@ -93,16 +109,17 @@ button:focus {
 }
 #mainLogo {
 	position: fixed;
-	top: 0%;
-	left: 2.5%;
-	width: 8%;
-	height: 7%;
+	top: 0;
+	left: 55px;
+	width: 120px;
+	height: 60px;
 	box-sizing: border-box;
-	background-blend-mode: color-burn;
+}
+a {
+	text-decoration: none;
 }
 .dropList a {
-	text-decoration: none;
-	color: orange;
+	color: white;
 }
 .dropList a:active {
 	text-decoration: none;
@@ -117,15 +134,16 @@ input {
 	left: 4%;
 	width: 84%;
 	height: 10%;
-	;
 	padding: 2% 3%;
 	font-size: 0.9em;
-	background-color: rgba(255,255,255,0.7);
-	box-shadow: 1px 1px 3px rgba(255,255,255,0.5), -1px -1px 3px rgba(255,255,255,0.5);
+	background-color: transparent;
+	border-bottom: 1px rgba(0,0,0,0.2) solid;
+	/*background-color: rgba(255,255,255,0.7);*/
+	/*box-shadow: 1px 1px 3px rgba(255,255,255,0.5), -1px -1px 3px rgba(255,255,255,0.5);*/
 }
 input::placeholder {
  font-size: 0.75em;
- color: rgba(200,0,0,1);
+ color: rgba(0,0,0,0.5);
 }
 input:focus {
 	outline: none;
@@ -139,15 +157,15 @@ input:focus {
 #userBox span {
 	position: absolute;
 	left: 5%;
-	color: rgba(0,0,128,1);
+	color: rgba(128,0,0,0.78);
 	font-weight: bold;
 	font-size: 0.75em;
 }
 #userBox .link1 {
-	top: 60%;
+	top: 55%;
 }
 #userBox .link2 {
-	bottom: 20%;
+	top: 65%;
 }
 .button1 {
 	position: absolute;
@@ -156,25 +174,25 @@ input:focus {
 	margin: 0;
 }
 .button1:hover {
-	background-color: rgba(0,0,0,0.30);
+	background-color: rgba(0,0,0,0.9);
 }
 #logInButton {
 	top: 40%;
 	left: 4%;
 	height: 10%;
-	background-image: linear-gradient(rgba(0,200,0,0.10), rgba(0,128,0,0.3));
+	background-color: rgba(34,198,21,0.3);
 	color: white;
 	font-size: 0.9em;
 }
 .Box {
 	position: absolute;
-	height: 50%;
+	height: 400px;
 	width: 20%;
-	box-shadow: -2px 3px 3px rgba(0,0,0,0.5), 1px -1px 3px rgba(0,0,0,0.5);
-	border-radius: 0% 0% 2% 2%;
-	z-index: 0;
 	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.2));
+	box-shadow: 2px 5px 3px rgba(0,0,0,0.5);
+	border-radius: 0% 0% 2% 2%;
 }
+
 .Box .header {
 	position: absolute;
 	width: 100%;
@@ -185,15 +203,13 @@ input:focus {
 .Box:hover .header {
 	color: white;
 }
+
 #Box1 {
-	top: 20%;
-	left: 19%;
+	left: 29.5%;
+	top: 30%;
 }
-#Box2 {
-	top: 20%;
-	left: 40%;
-}
-#Box2 input {
+
+#Box1 input {
 	position: absolute;
 	top: 34.5%;
 	left: 5%;
@@ -204,30 +220,43 @@ input:focus {
 	font-size: 1em;
 	text-align: center;
 }
- #Box2 input::placeholder {
- font-size: 1em;
- color: rgba(128,128,128,0.80);
+ #Box1 input::placeholder {
+ font-size: 0.9em;
+ color: grey;
 }
 .button2 {
-	top: 70%;
-	left: 5%;
+	width: 60%;
+	top: 80%;
+	left: 20%;
 	height: 10%;
 	font-size: 1em;
 	color: black;
-	border: 1px rgba(128,128,128,0.5) solid;
+	border-radius: 20px;
 }
-.button2:hover {
-	color: white;
+
+
+#Box1 button {
+	background-color: transparent;
+	/*background-image: linear-gradient(rgba(128,0,0,0.20), rgba(128,0,0,0.5));*/
+	color: rgba(128,0,0,0.78);
 }
-#Box2 button {
-	background-image: linear-gradient(rgba(128,0,0,0.20), rgba(128,0,0,0.5));
+
+#Box1 button:hover {
+	border: 1px rgba(156,0,0,0.78) solid;
 }
-#Box3 {
+
+#Box2 {
 	top: 20%;
-	right: 19%;
+	left: 50.5%;
 }
-#Box3 button {
-	background-image: linear-gradient(rgba(0,0,140,0.20), rgba(0,0,140,0.5));
+
+#Box2 button {
+	background-color: transparent;
+	/*background-image: linear-gradient(rgba(0,0,140,0.20), rgba(0,0,140,0.5));*/
+	color: rgba(0,128,0,0.78);
+} 
+#Box2 button:hover {
+	border: 1px rgba(0,156,0,0.78) solid;
 }
 .grayColor {
 	background-color: rgba(128,128,128,0.60);
@@ -239,6 +268,7 @@ input:focus {
 	width: 90%;
 	height: 5%;
 	border-bottom: 1px rgba(128,128,128,0.5) solid;
+	line-height: 0.75em;
 	color: grey;
 	text-align: center;
 }
@@ -248,14 +278,81 @@ input:focus {
 	top: 40%;
 	left: 5%;
 	width: 90%;
-	height: 20.5%;
+	height: 80px;
 	font-size: 0.9em;
 	line-height: 1.6em;
 	background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.3));
 	box-shadow: 2px 5px 3px rgba(0,0,0,0.5);
-	z-index: 3;
+	z-index: 2;
 	text-align: center;
 }
+.instructions1 {
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	width: 90%;
+	color: rgba(0,0,0,0.78);
+}
+
+/* Sign Up page */
+#signUpForm {
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	height: 400px;
+	width: 30%;
+	text-align: center;
+}
+#signUpForm input {
+	text-align: left;
+	width: 80%;
+	height: 50px;
+	margin: 10px 0px;
+	background-color: transparent;
+	border-bottom: 1px rgba(0,0,0,0.3) solid;
+	font-size: 1.2em;
+}
+
+#signUpForm button {
+	top: 90%;
+	width: 40%;
+	color: rgba(0,0,128,0.78);
+	background-color: transparent;
+	border: none;
+}
+
+#signUpForm button:hover {
+	border: 1px rgba(0,0,156,0.78) solid; 
+}
+
+@media only screen and (max-width: 480px) {
+	.Box{
+		width: 70%;
+		height: 40%;
+		background-color: transparent;
+		border: none;
+	}
+	#Box1{
+		top: 70px;
+		left: 15%;
+	}
+	#Box2{
+		top: 57%;
+		left: 15%;
+		}
+	.dropList {
+		background-color: grey;
+	}
+	.userDropList {
+		background-color: grey;
+	}
+	#signUpForm {
+		width: 70%;
+		left: 15%;
+	}
+}
+
+
 .listAnimeIn {
 	visibility: visible;
 	animation-name: listAnimeIn;
@@ -267,13 +364,10 @@ input:focus {
  0% {
  opacity: 0;
  height: 0;
-/*	transform: scaleY(0);
-		transform-origin: top;*/
 }
  100% {
  opacity: 1;
  height: 1;
-/*transform: scaleY(1);*/
 }
 }
 .listAnimeOut {
@@ -288,12 +382,9 @@ input:focus {
  visibility: visible;
  opacity: 1;
  height: 1;
-/*transform: scaleY(1);
-		transform-origin: bottom;*/
 }
  100% {
  opacity: 0;
-		/*transform: scaleY(0);*/
 		height: 0;
 }
 }
