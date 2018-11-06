@@ -2,31 +2,35 @@
 const mainMenuBox = document.getElementById('mainMenuBox'),
 	userBox = document.getElementById('userBox'),
 	menuIconBox = document.getElementById('menuIconBox'),
-	login = document.getElementById('login'),
+	userIcon = document.getElementById('userIcon'),
 	weightCat = document.getElementById('weightCat'),
-	catList = document.getElementById('catList');
+	catList = document.getElementById('catList'),
+	  mainMenu = document.getElementById('mainMenu');
 
 menuIconBox.addEventListener('click', function () {
 	event.stopPropagation();
 	if (!mainMenuBox.classList.contains('listAnimeIn')) {
 		mainMenuBox.classList.remove('listAnimeOut');
 		mainMenuBox.classList.add('listAnimeIn');
+		mainMenu.src = 'close.jpg';
 	} else if (mainMenuBox.classList.contains('listAnimeIn')) {
 		mainMenuBox.classList.remove('listAnimeIn');
 		mainMenuBox.classList.add('listAnimeOut');
+		mainMenu.src = 'menu.png';
 	}
-	menuIconBox.classList.toggle('grayColor');
 });
 
 
-login.addEventListener('click', function () {
+userIcon.addEventListener('click', function () {
 	event.stopPropagation();
 	if (!userBox.classList.contains('listAnimeIn')) {
 		userBox.classList.remove('listAnimeOut');
 		userBox.classList.add('listAnimeIn');
+		userIcon.src = 'close.jpg';
 	} else if (userBox.classList.contains('listAnimeIn')) {
 		userBox.classList.remove('listAnimeIn');
 		userBox.classList.add('listAnimeOut');
+		userIcon.src = 'userIcon.png';
 	}
 });
 

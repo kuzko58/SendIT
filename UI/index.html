@@ -12,9 +12,9 @@
 <div class="mainHeader"> <a href="index.html">
   <div id="mainLogo"> <img  src="mainlogo.png" alt="SendIT" height="100%" width="100%"> </div>
   </a>
-  <div id="menuIconBox"> <img class="mainMenu" src="menu.png" alt="menu" height="100%" width="100%"> </div>
+  <div id="menuIconBox"> <img id="mainMenu" src="menu.png" alt="menu" height="100%" width="100%"> </div>
  
-  <div id="userIdBox"> <button id="login">Log In</button><button id="signUp"><a href="signup.html">Sign Up</a></button></div>
+  <div id="userIdBox"><p>sign up or log in</p><img src="userIcon.png" id="userIcon" alt="" ></div>
   
   <div id="mainMenuBox" class="dropList menuDropList">
     <ul>
@@ -27,25 +27,25 @@
   </div>
   <div id="userBox" class="userDropList">
     <form action="submit">
-      <input class="dropDownInput1" type="email" placeholder="email">
-      <input class="dropDownInput2" type="password" minlength="3" placeholder="password">
+      <input class="dropDownInput1" type="email" placeholder="Email:">
+      <input class="dropDownInput2" type="password" minlength="3" placeholder="Password:">
       <span class="link1">FORGOT PASSWORD?</span> <span class="link2"><a href="signup.html">CREATE ACCOUNT</a></span>
       <button id="logInButton" class="button1">LOGIN</button>
     </form>
   </div>
 </div>
-	
+	<div class="content">
+	<div class="banner"><h1><span>We</span> deliver,</h1></div>
 
 <div id="Box1" class="Box">
-  <div class="header"> <img class="bodyIcons track" src="track.jpg" alt="" height="70%" width="15%"> </div>
-  <input class="input1" type="text" placeholder="tracking number">
+  <div class="footer">Enter your 10 digit parcel ID to track your order</div>
+  <input class="input1" type="text" placeholder="tracking ID">
   <div>
     <button class="button1 button2">TRACK</button>
   </div>
-	<div class="instructions1">Enter your 10 digit track number to track your order</div>
 </div>
 <div id="Box2" class="Box">
-  <div class="header"> <img src="create.jpg" alt="" height="70%" width="15%"> </div>
+	<div class="footer">Choose a weight class to create a new shipment</div>
   <span id="weightCat">weight category</span>
   <div id="catList" class="weightList dropList">
     <ul id="ul1">
@@ -54,8 +54,9 @@
       <li>above 30kg</li>
     </ul>
   </div>
-  <button class="button1 button2"> CREATE</button>
-	<div class="instructions1">Choose a weight class to create a new shipment</div>
+  <button class="button1 button2">CREATE</button>
+	</div>
+		<div class="banner2"><h1><span>quick</span> and reliable.</h1></div>
 </div>
 
 

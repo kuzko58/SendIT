@@ -12,9 +12,9 @@
 <div class="mainHeader"> <a href="index.html">
   <div id="mainLogo"> <img  src="mainlogo.png" alt="SendIT" height="100%" width="100%"> </div>
   </a>
-  <div id="menuIconBox"> <img class="mainMenu" src="menu.png" alt="menu" height="100%" width="100%"> </div>
+  <div id="menuIconBox"> <img id="mainMenu" src="menu.png" alt="menu" height="100%" width="100%"> </div>
  
-  <div id="userIdBox"> <button id="login">Log In</button><button id="signUp"><a href="signup.html">Sign Up</a></button></div>
+  <div id="userIdBox"><p>sign up or log in</p><img src="userIcon.png" id="userIcon" alt="" ></div>
   
   <div id="mainMenuBox" class="dropList menuDropList">
     <ul>
@@ -27,21 +27,24 @@
   </div>
   <div id="userBox" class="userDropList">
     <form action="submit">
-      <input class="dropDownInput1" type="email" placeholder="email">
-      <input class="dropDownInput2" type="password" minlength="3" placeholder="password">
+      <input class="dropDownInput1" type="email" placeholder="Email:">
+      <input class="dropDownInput2" type="password" minlength="3" placeholder="Password:">
       <span class="link1">FORGOT PASSWORD?</span> <span class="link2"><a href="signup.html">CREATE ACCOUNT</a></span>
       <button id="logInButton" class="button1">LOGIN</button>
     </form>
   </div>
 </div>
-	
-<form action="" id="signUpForm" class="Box">
-	<input type="text" placeholder="name">
-	<input type="email" placeholder="email">
-	<input type="password" placeholder="password">
-	<input type="password" placeholder="confirm password">
+	<div class="content">
+	<div class="banner"><h1><span>We</span> deliver,</h1></div>
+		<form action="" id="signUpForm" class="Box">
+	<input type="text" placeholder="Name:">
+	<input type="email" placeholder="Email:">
+	<input type="password" placeholder="Password:">
+	<input type="password" placeholder="Confirm Password:">
 	<button id="signUpButton" class="button2">Sign Up</button>
 	</form>
+		<div class="banner2"><h1><span>quick</span> and reliable.</h1></div>
+</div>
 
 
 <script type="text/javascript" src="script.js"></script>
