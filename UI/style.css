@@ -17,10 +17,30 @@ input {
 	margin: 0;
 	border: none;
 }
-input::placeholder {
- font-size: 14px;
- color: lightgray;
+input::-webkit-input-placeholder {
+	font-size: 0.875em;
+	color: darkblue;
 }
+input::-ms-input-placeholder {
+	font-size: 0.875em;
+	color: darkblue;
+}
+input::-moz-placeholder {
+	font-size: 0.875em;
+	color: darkblue;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+}
+
 input:focus {
 	outline: none;
 }
@@ -42,19 +62,12 @@ button:focus {
 #mainLogo {
 	position: fixed;
 	top: 0;
-	left: 50px;
+	left: 20px;
 	width: 120px;
 	height: 60px;
 	box-sizing: border-box;
 }
 
-#menuIconBox {
-	position: fixed;
-	left: 15px;
-	top: 20px;
-	width: 20px;
-	height: 20px;
-}
 
 #userIdBox {
 	position: absolute;
@@ -62,7 +75,7 @@ button:focus {
 	width: 120px;
 	height: 50px;
 	text-align: center;
-	line-height: 12px;
+	line-height: 0.75em;
 }
 
 #userIcon {
@@ -78,7 +91,7 @@ button:focus {
 	top: 0;
 	width: 100%;
 	height: 30%;
-	font-size: 12px;	
+	font-size: 0.75em;	
 }
 
 .userDropList {
@@ -87,21 +100,11 @@ button:focus {
 	right: 0;
 	top: 62px;
 	width: 300px;
-	height: 400px;
+	height: 250px;
 	background-color: white;
+	box-shadow: -1px 1px 2px rgba(128,128,128,0.5);
 }
-.menuDropList {
-	visibility: hidden;
-	position: fixed;
-	left: 0;
-	top: 62px;
-	width: 19%;
-	height: 105px;
-	color: darkred;
-	font-size: 16px;
-	line-height: 24px;
-	background-color: white;
-}
+
 .dropList ul {
 	list-style: none;
 	margin: 0px;
@@ -110,11 +113,8 @@ button:focus {
 .dropList ul li {
 	margin: 0;
 	padding: 0.5% 2%;
-	border-bottom: 1px rgba(255,255,255,0.5) solid;
 }
-.dropList ul:last-child li:nth-child(3) {
-	border: none;
-}
+
 .dropList ul li:hover {
 	background-color: coral;
 	color: white;
@@ -123,29 +123,24 @@ button:focus {
 a {
 	text-decoration: none;
 }
-.dropList a {
-	color: darkred;
-}
-.dropList a:active {
-	text-decoration: none;
-	color: orange;
-}
+
 
 #userBox input {
 	position: absolute;
 	left: 4%;
 	width: 84%;
-	height: 8%;
+	height: 12%;
 	padding: 2% 3%;
-	background-color: transparent;
-	border: 1px rgba(0,0,0,0.2) solid;
+	background-color: whitesmoke;
+	border-left: 2px coral solid;
+	/*border: 1px rgba(0,0,0,0.2) solid;*/
 }
 
 .dropDownInput1 {
 	top: 10%;
 }
 .dropDownInput2 {
-	top: 25%;
+	top: 30%;
 }
 #userBox span {
 	position: absolute;
@@ -155,10 +150,10 @@ a {
 	font-size: 0.75em;
 }
 #userBox .link1 {
-	top: 55%;
+	top: 70%;
 }
 #userBox .link2 {
-	top: 65%;
+	top: 80%;
 }
 #userBox .link2 a {
 	color: coral;
@@ -172,44 +167,44 @@ a {
 }
 
 #logInButton {
-	top: 40%;
+	top: 50%;
 	left: 4%;
-	height: 10%;
-	background-color: forestgreen;
+	height: 16%;
+	background-color: coral;
 	color: white;
-	font-size: 16px;
+	font-size: 1em;
 }
 
 #logInButton:hover {
-	outline: 1px black solid;
+	
 }
 
 .content {
 	position: absolute;
-	top: 150px;
-	left: 20%;
-	border: 1px lightgray solid;
-	width: 60%;
-	height: 700px;
+	top: 120px;
+	left: 15%;
+	width: 70%;
+	height: 800px;
 }
 
 .Box {
 	position: absolute;
 	top: 150px;
-	height: 400px;
+	height: 500px;
 	width: 30%;
-	border-bottom: 1px lightgray solid;
-	border-top: 1px lightgray solid;
+	border: 1px lightgray solid;
+	box-shadow: -1px 1px 2px rgba(128,128,128,0.5);
+	border-radius: 0% 0% 2% 2%;
 }
 
 .Box .footer {
 	position: absolute;
-	top: 80%;
-	width: 100%;
-	height: 20%;
-	font-size: 14px;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	font-size: 0.875em;
 	color: grey;
-	text-align: center;
+	text-align: left;
 }
 
 #Box1 {
@@ -219,71 +214,71 @@ a {
 #Box1 input {
 	position: absolute;
 	top: 24.5%;
-	left: 5%;
-	height: 5%;
-	width: 90%;
-	background-color: transparent;
-	border-bottom: 1px gray solid;
-	font-size: 16px;
-	text-align: center;
+	left: 10%;
+	height: 10%;
+	width: 76%;
+	background-color: whitesmoke;
+	border-left: 2px coral solid;
+	font-size: 1em;
+	text-align: left;
+	padding: 0px 2%;
 }
  #Box1 input::placeholder {
- font-size: 0.9em;
- color: grey;
+ /*font-size: 0.9em;
+ color: grey;*/
 }
 .button2 {
 	width: 60%;
 	top: 60%;
-	left: 20%;
-	height: 10%;
-	font-size: 20px;
+	left: 30%;
+	height: 20%;
+	font-size: 1.5em;
 	color: black;
-	border-radius: 20px;
+	border: 1px solid;
+	/*border-radius: 20px;*/
+	background-color: transparent;
 }
-
+.button2:hover {
+	box-shadow: 1px 1px 2px rgba(128,128,128,0.5), -1px -1px 2px rgba(128,128,128,0.5);
+}
 
 #Box1 button {
-	background-color: transparent;
-	color: darkred;
+	color: white;
+	background-color: cadetblue;
 }
 
-#Box1 button:hover {
-	border: 1px darkred solid;
-}
 
 #Box2 {
 	left: 50.5%;
 }
 
 #Box2 button {
-	background-color: transparent;
-	color: coral;
+	background-color: coral;
+	color: white;
 	
 } 
-#Box2 button:hover {
-	border: 1px coral solid;
-}
 
 #weightCat {
 	position: absolute;
-	top: 25%;
-	left: 5%;
-	width: 90%;
-	height: 5%;
-	border-bottom: 1px solid;
-	line-height: 12px;
+	top: 24.5%;
+	left: 10%;
+	width: 80%;
+	height: 10%;
+	border: 1px solid;
+	font-size: 1em;
+	line-height: 300%;
 	color: grey;
 	text-align: center;
 }
 .weightList {
 	visibility: hidden;
 	position: absolute;
-	top: 30.5%;
-	left: 5%;
-	width: 90%;
-	height: 80px;
-	font-size: 14px;
-	line-height: 22px;
+	top: 35%;
+	left: 10%;
+	width: 80%;
+	height: 88px;
+	font-size: 1em;
+	line-height: 163%;
 	background-color: white;
 	border: 1px lightgray solid;
 	z-index: 2;
@@ -295,16 +290,17 @@ a {
 	top: 0;
 	left: 0;
 	width: 250px;
+	border: 1px lightgray solid;
 	border-bottom: 1px coral solid;
 	border-right: 1px coral solid;
 	color: coral;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 1.5em;
 	text-align: center;
 } 
 .banner span {
 	color: darkred;
-	font-size: 30px;
+	font-size: 0.75em;
 }
 
 .banner2 {
@@ -312,124 +308,121 @@ a {
 	bottom: 0;
 	right: 0;
 	width: 250px;
+	border: 1px lightgray solid;
 	border-left: 1px coral solid;
 	border-top: 1px coral solid;
 	color: coral;
 	font-style: italic;
-	font-size: 12px;
+	font-size: 0.875em;
 	text-align: center;
 } 
 .banner2 span {
 	color: darkred;
-	font-size: 20px;
+	font-size: 0.75em;
 }
 
 /* Sign Up page */
 #signUpForm {
 	position: absolute;
-	top: 20%;
-	left: 35%;
-	height: 400px;
-	width: 30%;
+	top: 10%;
+	left: 25%;
+	height: 500px;
+	width: 50%;
 	text-align: center;
+	padding: 20px 0px;
 	border: none;
+	box-shadow: none;
 }
 #signUpForm input {
 	padding-left: 10px;
 	text-align: left;
 	width: 80%;
 	height: 50px;
-	margin: 10px 0px;
+	margin: 20px 0px;
 	background-color: transparent;
 	border: 1px lightgray solid;
-	font-size: 16px;
+	border-left: 2px coral solid;
+	font-size: 1em;
 }
 
 #signUpForm button {
-	top: 90%;
 	width: 40%;
-	color: darkblue;
+	color: cadetblue;
 	background-color: transparent;
 	border: none;
+	box-shadow: 1px 1px 2px rgba(128,128,128,0.5), -1px -1px 2px rgba(128,128,128,0.5);
 }
 
-#signUpForm button:hover {
-	border: 1px darkblue solid; 
+@media only screen and (max-width: 1020px) {
+	body {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
 	body {
-		font-size: 14px;
-	}
-	input::placeholder {
 		font-size: 12px;
 	}
+	
 	.content {
 		top: 13%;
 		left: 10%;
 		width: 80%;
-		height: 620px;
+		height: 650px;
 	}
 	.banner {
-		font-size: 18px;
 		border: none;
 	}
 	.banner2 {
-		font-size: 12px;
-		line-height: 12px;
+		
 		border: none;
 	}
 	.Box{
-		width: 100%;
+		width: 99%;
 		height: 250px;
 		background-color: transparent;
+		box-shadow: none;
 	}
 	.Box .footer {
-		font-size: 12px;
+		top: 5%;
 	}
 	#Box1{
 		top: 70px;
 		left: 0;
 	}
 	#Box1 input {
-		top: 10%;
-		font-size: 16px;
+		top: 15%;
 		height: 50px;
-		border: 1px lightgray solid;
 	}
 	#Box2{
-		top: 321px;
+		top: 350px;
 		left: 0;
 		}
 	#weightCat {
-		top: 10%;
+		top: 15%;
 		border: 1px lightgray solid;
 		height: 30px;
-		font-size: 16px;
-		line-height: 26px;
-	}
-	.weightList {
-		top: 56px;
-		left: 15%;
+		line-height: 2.17em;
 	}
 	.dropList {
-		border: 1px lightgray solid;
-		width: 200px;
-		height: 90px;
+		height: 65px;
 	}
-	.userDropList {
-		border: 1px lightgray solid;
-		height: 300px;
+	.weightList {
+		top: 27.5%;
+		left: 10%;
 	}
+	
 	.button2 {
-		font-size: 14px;
-		top: 50%;
+		top: 60%;
 		left: 35%;
 		width: 30%;
 	}
 	#signUpForm {
 		width: 70%;
 		left: 15%;
+	}
+	#signUpForm button {
+		height: 50px;
 	}
 }
 
