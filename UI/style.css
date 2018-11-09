@@ -4,7 +4,7 @@ html, body {
 }
 
 body { 
-	background-color: white;
+	background-color: gray;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 16px;
 }
@@ -16,18 +16,19 @@ div {
 input {
 	margin: 0;
 	border: none;
+	border-left: 2px darkslategray solid;
 }
 input::-webkit-input-placeholder {
 	font-size: 0.875em;
-	color: darkblue;
+	color: darkslategray;
 }
 input::-ms-input-placeholder {
 	font-size: 0.875em;
-	color: darkblue;
+	color: darkslategray;
 }
 input::-moz-placeholder {
 	font-size: 0.875em;
-	color: darkblue;
+	color: darkslategray;
 }
 
 input:focus::-webkit-input-placeholder {
@@ -60,14 +61,26 @@ button:focus {
 }
 
 #mainLogo {
-	position: fixed;
+	position: absolute;
+	overflow: visible;
 	top: 0;
-	left: 20px;
-	width: 120px;
+	left: 0;
+	width: 150px;
 	height: 60px;
+	padding: 2px 20px;
+	border-right: 1px coral solid;
 	box-sizing: border-box;
+	font-family: arial;
+	text-align: center;
+	line-height: 0.5em;
+	background-color: white;
 }
-
+a #mainLogo {
+	color: windowText;
+}
+a #mainLogo span {
+	color: orangered;
+}
 
 #userIdBox {
 	position: absolute;
@@ -82,8 +95,8 @@ button:focus {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	height: 50%;
-	width: 30%;
+	height: 40%;
+	width: 20%;
 }
 
 #userIdBox p {
@@ -94,6 +107,17 @@ button:focus {
 	font-size: 0.75em;	
 }
 
+#loginButtonMenu {
+	position: absolute;
+	right: 15px;
+	font-size: 1em;
+	top: 15px;
+	padding: 10px;
+	color: darkslategray;
+	background-color: transparent;
+	border: 1px lightgray solid;
+	border-radius: 20px;
+}
 .userDropList {
 	visibility: hidden;
 	position: fixed;
@@ -116,7 +140,7 @@ button:focus {
 }
 
 .dropList ul li:hover {
-	background-color: coral;
+	background-color: orange;
 	color: white;
 }
 
@@ -132,7 +156,6 @@ a {
 	height: 12%;
 	padding: 2% 3%;
 	background-color: whitesmoke;
-	border-left: 2px coral solid;
 	/*border: 1px rgba(0,0,0,0.2) solid;*/
 }
 
@@ -145,8 +168,6 @@ a {
 #userBox span {
 	position: absolute;
 	left: 5%;
-	color: rgba(128,0,0,0.78);
-	font-weight: bold;
 	font-size: 0.75em;
 }
 #userBox .link1 {
@@ -156,7 +177,7 @@ a {
 	top: 80%;
 }
 #userBox .link2 a {
-	color: coral;
+	color: orangered;
 }
 
 .button1 {
@@ -170,9 +191,9 @@ a {
 	top: 50%;
 	left: 4%;
 	height: 16%;
-	background-color: coral;
+	background-color: orangered;
 	color: white;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 #logInButton:hover {
@@ -181,10 +202,11 @@ a {
 
 .content {
 	position: absolute;
-	top: 120px;
-	left: 15%;
-	width: 70%;
+	top: 100px;
+	left: 10%;
+	width: 80%;
 	height: 800px;
+	
 }
 
 .Box {
@@ -193,17 +215,17 @@ a {
 	height: 500px;
 	width: 30%;
 	border: 1px lightgray solid;
-	box-shadow: -1px 1px 2px rgba(128,128,128,0.5);
+	background-color: whitesmoke;
 	border-radius: 0% 0% 2% 2%;
 }
 
-.Box .footer {
+.Box .instruction {
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	left: 10%;
 	width: 80%;
 	font-size: 0.875em;
-	color: grey;
+	color: darkslategray;
 	text-align: left;
 }
 
@@ -215,27 +237,23 @@ a {
 	position: absolute;
 	top: 24.5%;
 	left: 10%;
-	height: 10%;
+	height: 8%;
 	width: 76%;
-	background-color: whitesmoke;
-	border-left: 2px coral solid;
+	background-color: lightgray;
 	font-size: 1em;
 	text-align: left;
 	padding: 0px 2%;
 }
- #Box1 input::placeholder {
- /*font-size: 0.9em;
- color: grey;*/
-}
+
 .button2 {
-	width: 60%;
+	width: 40%;
 	top: 60%;
 	left: 30%;
-	height: 20%;
-	font-size: 1.5em;
+	height: 15%;
+	font-size: 1.2em;
 	color: black;
 	border: 1px solid;
-	/*border-radius: 20px;*/
+	font-family: arial;
 	background-color: transparent;
 }
 .button2:hover {
@@ -244,7 +262,7 @@ a {
 
 #Box1 button {
 	color: white;
-	background-color: cadetblue;
+	background-color: black;
 }
 
 
@@ -253,7 +271,7 @@ a {
 }
 
 #Box2 button {
-	background-color: coral;
+	background-color: orangered;
 	color: white;
 	
 } 
@@ -263,9 +281,9 @@ a {
 	top: 24.5%;
 	left: 10%;
 	width: 80%;
-	height: 10%;
+	height: 8%;
 	border: 1px solid;
-	font-size: 1em;
+	font-size: 0.875em;
 	line-height: 300%;
 	color: grey;
 	text-align: center;
@@ -273,7 +291,7 @@ a {
 .weightList {
 	visibility: hidden;
 	position: absolute;
-	top: 35%;
+	top: 33%;
 	left: 10%;
 	width: 80%;
 	height: 88px;
@@ -285,22 +303,27 @@ a {
 	text-align: center;
 }
 
-.banner {
-	position: absolute;
-	top: 0;
+.underHeader {
+	position:absolute;
+	top: 62px;
 	left: 0;
-	width: 250px;
-	border: 1px lightgray solid;
-	border-bottom: 1px coral solid;
-	border-right: 1px coral solid;
-	color: coral;
-	font-style: italic;
-	font-size: 1.5em;
-	text-align: center;
-} 
-.banner span {
-	color: darkred;
-	font-size: 0.75em;
+	width: 100%;
+	height: 200px;
+	background-color: lightgray;
+}
+.underHeader h2 {
+	color: gray;
+	width: 100px;
+	margin: 25px;
+	margin-top: 35px;
+	font-size: 1.3em;
+	font-family: hevatica;
+	line-height: 1.3em;
+}
+#arrowImg {
+	position: absolute;
+	top: 0px;
+	left: 200px;
 }
 
 .banner2 {
@@ -311,104 +334,104 @@ a {
 	border: 1px lightgray solid;
 	border-left: 1px coral solid;
 	border-top: 1px coral solid;
-	color: coral;
-	font-style: italic;
-	font-size: 0.875em;
+	background-color: white;
+	font-size: 0.75em;
 	text-align: center;
 } 
 .banner2 span {
-	color: darkred;
-	font-size: 0.75em;
+	color: orangered;
 }
 
 /* Sign Up page */
 #signUpForm {
 	position: absolute;
-	top: 10%;
+	top: 0%;
 	left: 25%;
-	height: 500px;
+	height: 300px;
 	width: 50%;
 	text-align: center;
-	padding: 20px 0px;
+	padding: 30px 0px;
 	border: none;
 	box-shadow: none;
 }
 #signUpForm input {
-	padding-left: 10px;
+	padding: 0% 1%;
 	text-align: left;
 	width: 80%;
-	height: 50px;
-	margin: 20px 0px;
-	background-color: transparent;
-	border: 1px lightgray solid;
-	border-left: 2px coral solid;
+	height: 40px;
+	margin: 10px 0px;
+	background-color: lightgray;
 	font-size: 1em;
 }
 
 #signUpForm button {
-	width: 40%;
-	color: cadetblue;
-	background-color: transparent;
-	border: none;
-	box-shadow: 1px 1px 2px rgba(128,128,128,0.5), -1px -1px 2px rgba(128,128,128,0.5);
-}
-
-@media only screen and (max-width: 1020px) {
-	body {
-		font-size: 12px;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	body {
-		font-size: 12px;
-	}
+	width: 82%;
+	height: 40px;
+	color: white;
+	background-color: coral;
+	border: 2px coral solid;
+	box-sizing: border-box;
 	
+}
+
+@media only screen and (max-width: 960px) {
+	body {
+		font-size: 14px;
+	}
+	#mainLogo {
+		line-height: 1.8em;
+		width: 120px;
+		padding: 2px;
+	}
+	.underHeader h2{
+		display: none;
+	}
 	.content {
-		top: 13%;
+		top: 5%;
 		left: 10%;
 		width: 80%;
 		height: 650px;
 	}
 	.banner {
 		border: none;
+		text-align: left;
 	}
 	.banner2 {
-		
 		border: none;
+		text-align: right;
 	}
 	.Box{
 		width: 99%;
 		height: 250px;
-		background-color: transparent;
 		box-shadow: none;
 	}
-	.Box .footer {
+	.Box .instruction {
+		background-color: transparent;
 		top: 5%;
 	}
 	#Box1{
-		top: 70px;
+		top: 60px;
 		left: 0;
 	}
 	#Box1 input {
-		top: 15%;
-		height: 50px;
+		top: 20%;
+		height: 40px;
 	}
 	#Box2{
 		top: 350px;
 		left: 0;
 		}
 	#weightCat {
-		top: 15%;
+		top: 20%;
 		border: 1px lightgray solid;
 		height: 30px;
-		line-height: 2.17em;
+		line-height: 2.67em;
 	}
 	.dropList {
 		height: 65px;
 	}
 	.weightList {
-		top: 27.5%;
+		top: 32.5%;
 		left: 10%;
 	}
 	
@@ -426,6 +449,14 @@ a {
 	}
 }
 
+@media only screen and (max-width: 480px){
+	body {
+		font-size: 12px;
+	}
+	.Box {
+		
+	}
+}
 
 .listAnimeIn {
 	visibility: visible;
