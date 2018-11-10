@@ -8,6 +8,7 @@ This is the main development branch for api endpoints
 ### Prerequisites
 
 * Node.js
+* Command Line tool
 
 ### Installing
 
@@ -17,18 +18,6 @@ After cloning this branch on your local computer, run this command to install al
 ```
 npm install
 ```
-Precompile the js files using Babel CLI like so
-
-```
-npm run-script build
-```
-This should precompile all js file and place them in the build folder in the root directory.
-Start the server with no-demon for easy debugging 
-
-```
-npm run start1
-```
-Go to your browser, navigate to http://localhost:(yourport)/users/items, you should get a 200 OK response and some JSON objects.
 
 ## Running the tests
 
@@ -39,15 +28,6 @@ Run automated tests using
 ```
 npm run test
 ```
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ### Coding style
 
 All javascript code are written in ^ES6 and precompiles to ES5 for node to run. It also adheres to Airbnb style guide.
@@ -69,10 +49,8 @@ Follow this project on Pivotal Tracker https://www.pivotaltracker.com/projects/2
 
 ## Authors
 
-* **Kossy Ugochukwu** 
+* **Amaechi Chisom** 
 
 ## Acknowledgments
 
-* Andela
-* Ibrahim Abdulazeez
-* Amaechi Chisom
+* Kossy Ugochukwu
