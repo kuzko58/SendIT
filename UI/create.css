@@ -80,6 +80,13 @@ a {
 	line-height: 0.5em;
 	background-color: white;
 }
+a #mainLogo {
+	color: windowText;
+}
+a #mainLogo span {
+	color: orangered;
+}
+
 
 #userIdBox {
 	position: absolute;
@@ -117,29 +124,6 @@ a {
 	background-color: transparent;
 	border: 1px lightgray solid;
 	border-radius: 20px;
-}
-
-.banner {
-	position:absolute;
-	top: 62px;
-	left: 0;
-	width: 100%;
-	height: 200px;
-	background-color: lightgray;
-}
-.banner h2 {
-	color: gray;
-	width: 100px;
-	margin: 25px;
-	margin-top: 40px;
-	font-size: 1.2em;
-	font-family: arial;
-	line-height: 1.4em;
-}
-#bannerImg {
-	position: absolute;
-	top: 0px;
-	left: 200px;
 }
 
 .userDropList {
@@ -244,163 +228,67 @@ a {
 	left: 10%;
 	width: 80%;
 	height: 800px;
-	
 }
-
-.Box {
+#createForm {
 	position: absolute;
-	top: 150px;
-	height: 500px;
-	width: 30%;
-	border: 1px lightgray solid;
+	top: 10%;
+	left: 20%;
+	width: 60%;
+	height: 80%;
 	background-color: whitesmoke;
-	z-index: 1;
 }
 
-.Box .instruction {
-	position: absolute;
-	top: 15%;
-	left: 10%;
-	width: 80%;
-	font-size: 0.875em;
+#formHeader {
+	text-align: center;
 	color: darkslategray;
-	text-align: left;
-}
-
-#Box1 {
-	left: 19.5%;
-}
-
-#Box1 input {
-	position: absolute;
-	top: 24.5%;
-	left: 10%;
-	height: 8%;
-	width: 76%;
-	background-color: lightgray;
-	font-size: 1em;
-	text-align: left;
-	padding: 0px 2%;
-}
-
-.button2 {
-	width: 40%;
-	top: 60%;
-	left: 30%;
-	height: 15%;
-	font-size: 1.2em;
-	color: white;
-	border: 1px solid;
 	font-family: arial;
-	background-color: transparent;
-}
-.button2:hover {
-	box-shadow: 1px 1px 2px rgba(128,128,128,0.5), -1px -1px 2px rgba(128,128,128,0.5);
 }
 
-#Box1 button {
-	background-color: black;
-}
-
-
-#Box2 {
-	left: 50.5%;
-}
-
-#Box2 button {
-	background-color: red;
-	
-} 
-
-#weightCat {
+.createFormComponent {
 	position: absolute;
-	top: 24.5%;
-	left: 10%;
-	width: 80%;
-	height: 8%;
-	border: 1px solid;
+	left: 20%;
+	width: 60%;
+	height: 30px;
+	border: 1px lightgray solid;
+	border-left: 2px darkslategray solid;
 	font-size: 0.875em;
 	font-family: arial;
-	line-height: 300%;
-	color: grey;
-	text-align: center;
+	outline: none;
 }
-.weightList {
-	visibility: hidden;
-	position: absolute;
-	top: 33%;
-	left: 10%;
-	width: 80%;
-	height: 88px;
-	font-size: 1em;
-	line-height: 163%;
+
+#weightClass {
+	top: 10%;
+}
+
+#shipFrom {
+	top: 30%;
+	
+}
+
+#shipTo {
+	top: 50%;
+}
+
+#priceBox {
+	top: 70%;
 	background-color: white;
-	border: 1px lightgray solid;
-	z-index: 2;
-	text-align: center;
+	font-weight: bold;
+	line-height: 2em;
+	padding: 2px;
 }
 
-
-.slogan {
-	position: absolute;
-	top: 150px;
-	right: 50px;
-	width: 250px;
-	background-color: transparent;
-	font-size: 1em;
-	font-family: mistral;
-	text-align: center;
-	z-index: 1;
-} 
-.slogan span {
-	color: orangered;
-}
-.mainFooter {
-	position: absolute;
-	left: 0;
-	top: 730px;
-	bottom: 0;
-	width: 100%;
-	
-	background-color: lightgray;
-	z-index: 0;
-}
-#bannerImg2 {
-	position: absolute;
-	right: 200px;
-	height: 200px;
-}
-
-/* Sign Up page */
-#signUpForm {
-	position: absolute;
-	top: 0%;
-	left: 25%;
-	height: 300px;
-	width: 50%;
-	text-align: center;
-	padding: 30px 0px;
+#confirmShipmentButton {
+	top: 80%;
+	background-color: red;
+	color: white;
+	font-weight: bold;
 	border: none;
-	box-shadow: none;
+	margin-left: 2px;
 }
-#signUpForm input {
-	padding: 0% 1%;
-	text-align: left;
-	width: 80%;
-	height: 40px;
-	margin: 10px 0px;
-	background-color: lightgray;
-	font-size: 1em;
+#shipFrom option:hover {
+	background-color: darkslategray;
 }
 
-#signUpForm button {
-	width: 82%;
-	height: 40px;
-	background-color: coral;
-	border: 2px coral solid;
-	box-sizing: border-box;
-	
-}
 
 @media only screen and (max-width: 960px) {
 	body {
@@ -411,13 +299,7 @@ a {
 		width: 120px;
 		padding: 2px;
 	}
-	.banner {
-		display: none;
-	}
-
-	.mainFooter {
-		display: none;
-	}
+	
 	.content {
 		top: 8%;
 		left: 10%;
@@ -425,57 +307,15 @@ a {
 		height: 650px;
 	}
 	
-	.slogan {
-		border: none;
-		text-align: right;
-	}
-	.Box{
-		width: 99%;
-		height: 250px;
-		box-shadow: none;
-	}
-	.Box .instruction {
-		background-color: transparent;
+	#createForm {
+		width: 100%;
+		left: 0;
 		top: 5%;
 	}
-	#Box1{
-		top: 60px;
-		left: 0;
-	}
-	#Box1 input {
-		top: 20%;
-		height: 40px;
-	}
-	#Box2{
-		top: 350px;
-		left: 0;
-		}
-	#weightCat {
-		top: 20%;
-		border: 1px lightgray solid;
-		height: 30px;
-		line-height: 2.67em;
-	}
-	.dropList {
-		height: 65px;
-	}
-	.weightList {
-		top: 32.5%;
-		left: 10%;
-	}
-	
-	.button2 {
-		top: 60%;
-		left: 35%;
-		width: 30%;
-	}
-	#signUpForm {
-		width: 70%;
-		left: 15%;
-		top: 5%;
-	}
-	#signUpForm button {
-		height: 50px;
+
+	.createFormComponent {
+		left: 5%;
+		width: 90%;
 	}
 }
 
@@ -521,30 +361,3 @@ a {
 }
 }
 
-.bannerAnimeIn {
-	animation-name: bannerAnimeIn;
-	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
-}
-@keyframes bannerAnimeIn{
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-.bannerAnimeOut {
-	animation-name: bannerAnimeOut;
-	animation-duration: 6s;
-	animation-timing-function: ease-in-out;
-}
-@keyframes bannerAnimeOut{
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
