@@ -45,7 +45,7 @@ If you've followed all the instructions above, you should have it up and running
 
 ## Tracking
 
-Follow this project on Pivotal Tracker https://www.pivotaltracker.com/projects/2194061
+Follow this project on Pivotal Tracker https://www.pivotaltracker.com/n/projects/2218911
 
 ## Authors
 
