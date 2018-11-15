@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>SendIT</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="admin.css">
 </head>
 
@@ -12,7 +12,7 @@
   <div id="mainLogo"><img src="mainlogo.png" alt="" width="100%" height="100%"></div>
   </a>
   <button id="loginButtonMenu">Login</button>
-	<div id="userIconBox"><img id="userIcon" src="userIcon.png" alt="" height="100%" width="100%"></div>
+  <div id="userIconBox"><img id="userIcon" src="userIcon.png" alt="" height="100%" width="100%"></div>
   <div id="userBox" class="userDropList">
     <form id="loginForm" action="submit">
       <input class="dropDownInput1" type="email" placeholder="Email:">
@@ -20,35 +20,28 @@
       <span class="link1">FORGOT PASSWORD?</span> <span class="link2"><a href="signup.html">CREATE ACCOUNT</a></span>
       <button id="logInButton" class="button1">LOGIN</button>
     </form>
-	  <div id="userMenu" class="dropList">
-		  <ul>
-			  <li>Profile</li>
-			  <a href="create.html"><li>New order</li></a>
-			  <li>Manage order</li>
-		  </ul>
-		  <button id="logOutButton" class="button1">LOG OUT</button>
-	  </div>
+    <div id="userMenu" class="dropList">
+      <ul>
+        <li>Profile</li>
+      </ul>
+      <button id="logOutButton" class="button1">LOG OUT</button>
+    </div>
   </div>
 </div>
-	<div class="content">
-	
-		<form action="" id="statusForm">
-			<h3 id="formHeader">ADMINISTRATOR PAGE</h3>
-			<input type="text" id="currentLocation" class="statusFormComponent" placeholder="Current location">
-			
-			<select name="" id="orderStatus" class="statusFormComponent">
-				<option value="" >Status</option>
-				<option value="">Delivered</option>
-				<option value="">In Transit</option>
-				<option value="">Cancelled</option>
-			</select>
-			
-			<button id="confirmChangesButton" class="statusFormComponent">confirm</button>
-		</form>
-
-		
+<div class="content">
+  <form action="" id="statusForm">
+    <h2 id="formHeader">ADMINISTRATOR PAGE</h2>
+	  <input type="text" id="orderID" class="statusFormComponent" placeholder="Order ID">
+    <input type="text" id="currentLocation" class="statusFormComponent" placeholder="Current location">
+    <select name="" id="orderStatus" class="statusFormComponent">
+      <option value="" >Status</option>
+      <option value="">Delivered</option>
+      <option value="">In Transit</option>
+      <option value="">Cancelled</option>
+    </select>
+    <button id="confirmChangesButton" class="statusFormComponent">confirm</button>
+  </form>
 </div>
-	
 <script type="text/javascript" src="admin.js"></script>
 </body>
 </html>

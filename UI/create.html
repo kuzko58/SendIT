@@ -24,7 +24,7 @@
 		  <ul>
 			  <li>Profile</li>
 			  <a href="create.html"><li>New order</li></a>
-			  <li>Manage order</li>
+			  <a href="myorders.html"><li>My orders</li></a>
 		  </ul>
 		  <button id="logOutButton" class="button1">LOG OUT</button>
 	  </div>
@@ -33,13 +33,15 @@
 	<div class="content">
 	
 		<form action="" id="createForm">
-			<h3 id="formHeader">CREATE NEW SHIPMENT ORDER</h3>
-			<select name="" id="weightClass" class="createFormComponent">
+			<h2 id="formHeader">CREATE A NEW SHIPMENT ORDER</h2>
+			
+				<select name="" id="weightClass" class="createFormComponent">
 				<option value="" >Weight Class</option>
 				<option value="">0kg-15kg</option>
 				<option value="">16kg-30kg</option>
 				<option value="">above 30kg</option>
 			</select>
+			
 			
 			<select name="" id="shipFrom" class="createFormComponent">
 				<option value="" >From</option>
