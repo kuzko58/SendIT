@@ -1,8 +1,8 @@
 "use strict";
 const userBox = document.getElementById('userBox'),
 	loginButtonMenu = document.getElementById('loginButtonMenu'),
-	userIconBox = document.getElementById('userIconBox'),
-	userIcon = document.getElementById('userIcon');
+	  userIconBox = document.getElementById('userIconBox'),
+	  userIcon = document.getElementById('userIcon');
 
 
 loginButtonMenu.addEventListener('click', () => {

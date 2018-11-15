@@ -1,14 +1,11 @@
-
 html, body {
 	width: 100%;
 }
-
-body { 
+body {
 	background-color: cadetblue;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-family: arial, "serif";
 	font-size: 16px;
 }
-
 div {
 	border: 1px transparent solid;
 	overflow: hidden;
@@ -19,37 +16,32 @@ input {
 	border-left: 2px darkslategray solid;
 }
 input::-webkit-input-placeholder {
-	font-size: 0.875em;
-	color: darkslategray;
+ font-size: 0.875em;
+ color: darkslategray;
 }
 input::-ms-input-placeholder {
-	font-size: 0.875em;
-	color: darkslategray;
+ font-size: 0.875em;
+ color: darkslategray;
 }
 input::-moz-placeholder {
-	font-size: 0.875em;
-	color: darkslategray;
+ font-size: 0.875em;
+ color: darkslategray;
 }
-
-input:focus::-webkit-input-placeholder {
-    opacity: 0;
+ input:focus::-webkit-input-placeholder {
+ opacity: 0;
 }
 input:focus:-ms-input-placeholder {
-    opacity: 0;
+ opacity: 0;
 }
-
-input:focus::-moz-placeholder {
-    opacity: 0;
+ input:focus::-moz-placeholder {
+ opacity: 0;
 }
-
 input:focus {
 	outline: none;
 }
-
 button:focus {
 	outline: none;
 }
-
 a {
 	text-decoration: none;
 	color: windowText;
@@ -64,7 +56,6 @@ a {
 	background-color: white;
 	z-index: 2;
 }
-
 #mainLogo {
 	position: absolute;
 	overflow: visible;
@@ -72,7 +63,6 @@ a {
 	left: 0;
 	width: 150px;
 	height: 60px;
-	
 	border-right: 1px coral solid;
 	box-sizing: border-box;
 	font-family: arial;
@@ -86,25 +76,6 @@ a #mainLogo {
 a #mainLogo span {
 	color: orangered;
 }
-
-
-#userIdBox {
-	position: absolute;
-	right: 30px;
-	width: 120px;
-	height: 50px;
-	text-align: center;
-	line-height: 0.75em;
-}
-
-#userIdBox p {
-	positon: absolute;
-	top: 0;
-	width: 100%;
-	height: 30%;
-	font-size: 0.75em;	
-}
-
 #userIconBox {
 	position: absolute;
 	top: 15px;
@@ -112,7 +83,6 @@ a #mainLogo span {
 	height: 30px;
 	width: 30px;
 }
-
 #loginButtonMenu {
 	visibility: hidden;
 	position: absolute;
@@ -125,7 +95,6 @@ a #mainLogo span {
 	border: 1px lightgray solid;
 	border-radius: 20px;
 }
-
 .userDropList {
 	visibility: hidden;
 	position: fixed;
@@ -139,7 +108,6 @@ a #mainLogo span {
 #loginForm {
 	visibility: hidden;
 }
-
 #loginForm input {
 	position: absolute;
 	left: 4%;
@@ -148,7 +116,6 @@ a #mainLogo span {
 	padding: 2% 3%;
 	background-color: whitesmoke;
 }
-
 .dropDownInput1 {
 	top: 10%;
 }
@@ -169,14 +136,12 @@ a #mainLogo span {
 #loginForm .link2 a {
 	color: orangered;
 }
-
 .button1 {
 	position: absolute;
 	width: 90%;
 	border: none;
 	margin: 0;
 }
-
 #logInButton {
 	top: 50%;
 	left: 4%;
@@ -185,7 +150,6 @@ a #mainLogo span {
 	color: white;
 	font-size: 0.9em;
 }
-
 #userMenu {
 	height: 100%;
 	font-size: 1.2em;
@@ -203,7 +167,6 @@ a #mainLogo span {
 	color: white;
 	background-color: grey;
 }
-
 .dropList ul {
 	list-style: none;
 	margin: 0px;
@@ -213,37 +176,30 @@ a #mainLogo span {
 	margin: 0;
 	padding: 0.5% 2%;
 }
-
 .dropList ul li:hover {
 	background-color: darkslategray;
 	color: white;
 }
-
-
-
-
 .content {
 	position: absolute;
-	top: 100px;
-	left: 10%;
-	width: 80%;
-	height: 800px;
+	top: 62px;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	background-color: whitesmoke;
 }
 #statusForm {
 	position: absolute;
-	top: 10%;
+	top: 5%;
 	left: 30%;
 	width: 40%;
 	height: 80%;
 	background-color: whitesmoke;
 }
-
 #formHeader {
 	text-align: center;
 	color: darkslategray;
-	font-family: arial;
 }
-
 .statusFormComponent {
 	position: absolute;
 	left: 20%;
@@ -251,71 +207,63 @@ a #mainLogo span {
 	height: 30px;
 	border: 1px lightgray solid;
 	border-left: 2px darkslategray solid;
-	font-size: 0.875em;
+	font-size: 1em;
 	font-family: arial;
 	outline: none;
 }
-
-#currentLocation {
-	top: 10%;
-	font-size: 1em;
+#orderID {
+	top: 20%;
 	padding: 0px 3px;
+	box-sizing: border-box;
 }
-
+#currentLocation {
+	top: 40%;
+	padding: 0px 3px;
+	box-sizing: border-box;
+}
 #orderStatus {
-	top: 30%;
-	margin-left: 1.5px;
+	top: 60%;
 }
-
-
 #confirmChangesButton {
-	top: 80%;
+	top: 90%;
 	background-color: red;
 	color: white;
 	border: none;
-	margin-left: 2px;
 	font-weight: bold;
 }
 #shipFrom option:hover {
 	background-color: darkslategray;
 }
 
-
 @media only screen and (max-width: 960px) {
-	body {
-		font-size: 14px;
-	}
-	#mainLogo {
-		line-height: 1.8em;
-		width: 120px;
-		padding: 2px;
-	}
-	
-	.content {
-		top: 8%;
-		left: 10%;
-		width: 80%;
-		height: 500px;
-	}
-	
-	#statusForm {
-		width: 100%;
-		left: 0;
-		top: 5%;
-	}
-
-	.statusFormComponent {
-		left: 5%;
-		width: 90%;
-	}
+body {
+	font-size: 14px;
+}
+#mainLogo {
+	line-height: 1.8em;
+	width: 120px;
+	padding: 2px;
+}
+.content {
+	width: 100%;
+	height: 500px;
+}
+#statusForm {
+	width: 100%;
+	left: 0;
+	top: 5%;
+}
+.statusFormComponent {
+	left: 5%;
+	width: 90%;
+}
 }
 
-@media only screen and (max-width: 480px){
-	body {
-		font-size: 12px;
-	}
+@media only screen and (max-width: 480px) {
+body {
+	font-size: 12px;
 }
-
+}
 .listAnimeIn {
 	visibility: visible;
 	animation-name: listAnimeIn;
@@ -348,7 +296,6 @@ a #mainLogo span {
 }
  100% {
  opacity: 0;
-		height: 0;
+ height: 0;
 }
 }
-

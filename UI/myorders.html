@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SendIT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="myorders.css">
+</head>
+
+<body>
+<div class="mainHeader"> <a href="index.html">
+  <div id="mainLogo"><img src="mainlogo.png" alt="" width="100%" height="100%"></div>
+  </a>
+  <button id="loginButtonMenu">Login</button>
+	<div id="userIconBox"><img id="userIcon" src="userIcon.png" alt="" height="100%" width="100%"></div>
+  <div id="userBox" class="userDropList">
+    <form id="loginForm" action="submit">
+      <input class="dropDownInput1" type="email" placeholder="Email:">
+      <input class="dropDownInput2" type="password" minlength="3" placeholder="Password:">
+      <span class="link1">FORGOT PASSWORD?</span> <span class="link2"><a href="signup.html">CREATE ACCOUNT</a></span>
+      <button id="logInButton" class="button1">LOGIN</button>
+    </form>
+	  <div id="userMenu" class="dropList">
+		  <ul>
+			  <li>Profile</li>
+			  <a href="create.html"><li>New order</li></a>
+			  <a href="myorders.html"><li>My orders</li></a>
+		  </ul>
+		  <button id="logOutButton" class="button1">LOG OUT</button>
+	  </div>
+  </div>
+</div>
+	<div class="content">
+	
+			<h2 id="pageHeader">MY ORDERS</h2>
+		<table id="orderInfo" class="tableStyle">
+			<thead>
+				<tr>
+					<th>ORDER ID</th>
+					<th>PICKUP LOCATION</th>
+					<th>DESTINATION</th>
+					<th>PRICE</th>
+					<th>STATUS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Id</td>
+					<td>Lagos</td>
+					<td><select name="" id="">
+						<option value="">Abuja</option>
+						<option value="">Change</option>
+						</select></td>
+					<td>N5,500</td>
+					<td><select name="" id="">
+						<option value="">In Transit</option>
+						<option value="">Cancel</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td>Id</td>
+					<td>Lagos</td>
+					<td>Port-Harcourt</td>
+					<td>N3,900</td>
+					<td>Delivered</td>
+				</tr>
+				<tr>
+					<td>Id</td>
+					<td>Lagos</td>
+					<td>Abuja</td>
+					<td>N10,400</td>
+					<td>Cancelled</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<table id="orderStat" class="tableStyle">
+			<thead>
+				<tr>
+					<th>PARCELS DELIVERED</th>
+					<th>PARCELS CANCELLED</th>
+					<th>PARCELS IN TRANSIT</th>
+					<th>ALL PARCELS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+	
+<script type="text/javascript" src="myorders.js"></script>
+</body>
+</html>
