@@ -8,8 +8,14 @@ start();
 
 describe('get specific order', () => {
   const data = {};
+  const options = {
+    url: 'http://localhost:3000/users/orders/od-0001',
+    headers: {
+      sender: 'user',
+    },
+  };
   beforeAll((done) => {
-    Request.get('http://localhost:3000/users/orders/od-0001', (error, response, body) => {
+    Request.get(options, (error, response, body) => {
       data.status = response.statusCode;
       data.body = body;
       done();
@@ -25,8 +31,14 @@ describe('get specific order', () => {
 
 describe('get nonexistent order', () => {
   const data = {};
+  const options = {
+    url: 'http://localhost:3000/users/orders/od-0001',
+    headers: {
+      sender: 'user',
+    },
+  };
   beforeAll((done) => {
-    Request.get('http://localhost:3000/users/orders/od-0004', (error, response, body) => {
+    Request.get(options, (error, response, body) => {
       data.status = response.statusCode;
       data.body = body;
       done();
@@ -39,8 +51,14 @@ describe('get nonexistent order', () => {
 
 describe('get all orders', () => {
   const data = {};
+  const options = {
+    url: 'http://localhost:3000/users/orders/',
+    headers: {
+      sender: 'user',
+    },
+  };
   beforeAll((done) => {
-    Request.get('http://localhost:3000/users/orders/all', (error, response, body) => {
+    Request.get(options, (error, response, body) => {
       data.status = response.statusCode;
       data.body = body;
       done();
@@ -60,6 +78,9 @@ describe('creating a new order', () => {
     url: 'http://localhost:3000/users/orders/create',
     json: true,
     method: 'post',
+    headers: {
+      sender: 'user',
+    },
     body: {
       id: 'od-0004',
       user: 'us-0001',
@@ -79,8 +100,14 @@ describe('creating a new order', () => {
   });
   describe('check if order was created', () => {
     const data2 = {};
+    const options2 = {
+      url: 'http://localhost:3000/users/orders/od-0004',
+      headers: {
+        sender: 'user',
+      },
+    };
     beforeAll((done) => {
-      Request.get('http://localhost:3000/users/orders/od-0004', (error, response, body) => {
+      Request.get(options2, (error, response, body) => {
         data2.status = response.statusCode;
         data2.body = body;
         done();
@@ -103,8 +130,14 @@ describe('creating a new order', () => {
 
 describe('canceling an order', () => {
   const data = {};
+  const options = {
+    url: 'http://localhost:3000/users/orders/cancel/od-0002',
+    headers: {
+      sender: 'user',
+    },
+  };
   beforeAll((done) => {
-    Request.put('http://localhost:3000/users/orders/cancel/od-0002', (error, response) => {
+    Request.put(options, (error, response) => {
       data.status = response.statusCode;
       done();
     });
@@ -114,8 +147,14 @@ describe('canceling an order', () => {
   });
   describe('check if order was canceled', () => {
     const data2 = {};
+    const options2 = {
+      url: 'http://localhost:3000/users/orders/od-0002',
+      headers: {
+        sender: 'user',
+      },
+    };
     beforeAll((done) => {
-      Request.get('http://localhost:3000/users/orders/od-0002', (error, response, body) => {
+      Request.get(options2, (error, response, body) => {
         data2.status = response.statusCode;
         data2.body = body;
         done();

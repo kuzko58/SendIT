@@ -1,5 +1,5 @@
 {
-  "name": "fast-food-fast",
+  "name": "send-it",
   "version": "1.0.0",
   "description": "api endpoints",
   "main": "babel-node server.js",
@@ -16,7 +16,7 @@
   "keywords": [
     "api"
   ],
-  "author": "kossy ugochukwu",
+  "author": "Amaechi Chisom",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kuzko58/SendIT/issues"
@@ -26,6 +26,7 @@
     "async": "^2.6.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "eslint-config-airbnb": "^17.1.0",
     "express": "~4.16.0",
     "express-validator": "^5.3.0",
     "grunt-contrib-jshint": "^2.0.0",
@@ -48,10 +49,10 @@
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "coveralls": "^3.0.2",
-    "eslint": "^5.5.0",
+    "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "jasmine": "^3.2.0",
+    "jasmine": "^3.3.0",
     "jasmine-core": "^2.4.1",
     "nodemon": "^1.18.4",
     "nyc": "^13.0.1",

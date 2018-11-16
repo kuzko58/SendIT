@@ -1,14 +1,14 @@
 import Router from 'express';
-import orders from '../controllers/orders';
+import parcels from '../controllers/parcels';
 
 const router = Router();
 
-router.get('/orders/all', orders.getAll);
+router.get('/users/:userId/parcels', parcels.getAllUserParcels);
 
-router.get('/orders/:orderId', orders.getSpecific);
+router.get('/parcels/:parcelId', parcels.getSpecific);
 
-router.post('/orders/create', orders.createNew);
+router.post('/parcels', parcels.createNew);
 
-router.put('/orders/cancel/:orderId', orders.cancel);
+router.put('/parcels/:parcelId/cancel', parcels.cancel);
 
 export default router;
