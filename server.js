@@ -5,8 +5,7 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-// on point
-// why do you still have normalize port..I removed it on a different file..but you fit commot am
+
 import usersRouter from './Routes/users';
 import adminRouter from './Routes/admin';
 
